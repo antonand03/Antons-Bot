@@ -1,5 +1,3 @@
-You can support the project on patreon: <https://patreon.com/nadekobot> or paypal: <https://paypal.me/Kwoth>
-
 ##Table Of Contents
 - [Help](#help)
 - [Administration](#administration)
@@ -68,7 +66,7 @@ Command and aliases | Description | Usage
 `.antispam` | Stops people from repeating same message X times in a row. You can specify to either mute, kick or ban the offenders. If you're using mute, you can add a number of seconds at the end to use a timed mute. Max message count is 10. **Requires Administrator server permission.** | `.antispam 3 Mute` or `.antispam 4 Kick` or `.antispam 6 Ban`
 `.antispamignore` | Toggles whether antispam ignores current channel. Antispam must be enabled. **Requires Administrator server permission.** | `.antispamignore`
 `.antilist` `.antilst` | Shows currently enabled protection features.  | `.antilist`
-`.prune` `.clear` | `.prune` removes all Nadeko's messages in the last 100 messages. `.prune X` removes last `X` number of messages from the channel (up to 100). `.prune @Someone` removes all Someone's messages in the last 100 messages. `.prune @Someone X` removes last `X` number of 'Someone's' messages in the channel.  | `.prune` or `.prune 5` or `.prune @Someone` or `.prune @Someone X`
+`.prune` `.clear` | `.prune` removes all AntBot's messages in the last 100 messages. `.prune X` removes last `X` number of messages from the channel (up to 100). `.prune @Someone` removes all Someone's messages in the last 100 messages. `.prune @Someone X` removes last `X` number of 'Someone's' messages in the channel.  | `.prune` or `.prune 5` or `.prune @Someone` or `.prune @Someone X`
 `.slowmode` | Toggles slowmode. Disable by specifying no parameters. To enable, specify a number of messages each user can send, and an interval in seconds. For example 1 message every 5 seconds. **Requires ManageMessages server permission.** | `.slowmode 1 5` or `.slowmode`
 `.slowmodewl` | Ignores a role or a user from the slowmode feature. **Requires ManageMessages server permission.** | `.slowmodewl SomeRole` or `.slowmodewl AdminDude`
 `.adsarm` | Toggles the automatic deletion of confirmations for `.iam` and `.iamn` commands. **Requires ManageMessages server permission.** | `.adsarm`
@@ -87,13 +85,13 @@ Command and aliases | Description | Usage
 `.fwtoall` | Toggles whether messages will be forwarded to all bot owners or only to the first one specified in the credentials.json file **Bot Owner Only** | `.fwtoall`
 `.shardstats` | Stats for shards. Paginated with 25 shards per page.  | `.shardstats` or `.shardstats 2`
 `.restartshard` | Try (re)connecting a shard with a certain shardid when it dies. No one knows will it work. Keep an eye on the console for errors. **Bot Owner Only** | `.restartshard 2`
-`.leave` | Makes Nadeko leave the server. Either server name or server ID is required. **Bot Owner Only** | `.leave 123123123331`
+`.leave` | Makes AntBot leave the server. Either server name or server ID is required. **Bot Owner Only** | `.leave 123123123331`
 `.die` | Shuts the bot down. **Bot Owner Only** | `.die`
 `.restart` | Restarts the bot. Might not work. **Bot Owner Only** | `.restart`
 `.setname` `.newnm` | Gives the bot a new name. **Bot Owner Only** | `.newnm BotName`
 `.setnick` | Changes the nickname of the bot on this server. You can also target other users to change their nickname. **Requires ManageNicknames server permission.** | `.setnick BotNickname` or `.setnick @SomeUser New Nickname`
 `.setstatus` | Sets the bot's status. (Online/Idle/Dnd/Invisible) **Bot Owner Only** | `.setstatus Idle`
-`.setavatar` `.setav` | Sets a new avatar image for the NadekoBot. Argument is a direct link to an image. **Bot Owner Only** | `.setav http://i.imgur.com/xTG3a1I.jpg`
+`.setavatar` `.setav` | Sets a new avatar image for the AntBot. Argument is a direct link to an image. **Bot Owner Only** | `.setav http://i.imgur.com/xTG3a1I.jpg`
 `.setgame` | Sets the bots game. **Bot Owner Only** | `.setgame with snakes`
 `.setstream` | Sets the bots stream. First argument is the twitch link, second argument is stream name. **Bot Owner Only** | `.setstream TWITCHLINK Hello`
 `.send` | Sends a message to someone on a different server through the bot.  Separate server and channel/user ids with `|` and prefix the channel id with `c:` and the user id with `u:`. **Bot Owner Only** | `.send serverid|c:channelid message` or `.send serverid|u:userid message`
@@ -157,7 +155,7 @@ Command and aliases | Description | Usage
 `.leaderboard` `.lb` | Displays the bot's currency leaderboard.  | `.lb`
 `.race` | Starts a new animal race.  | `.race`
 `.joinrace` `.jr` | Joins a new race. You can specify an amount of currency for betting (optional). You will get YourBet*(participants-1) back if you win.  | `.jr` or `.jr 5`
-`.startevent` | Starts one of the events seen on public nadeko. `reaction` and `sneakygamestatus` are the only 2 available now. **Bot Owner Only** | `.startevent reaction`
+`.startevent` | Starts one of the events seen on public AntBot. `reaction` and `sneakygamestatus` are the only 2 available now. **Bot Owner Only** | `.startevent reaction`
 `.rafflecur` | Starts or joins a currency raffle with a specified amount. Users who join the raffle will lose the amount of currency specified and add it to the pot. After 30 seconds, random winner will be selected who will receive the whole pot. There is also a `mixed` mode in which the users will be able to join the game with any amount of currency, and have their chances be proportional to the amount they've bet.  | `.rafflecur 20` or `.rafflecur mixed 15`
 `.roll` | Rolls 0-100. If you supply a number `X` it rolls up to 30 normal dice. If you split 2 numbers with letter `d` (`xdy`) it will roll `X` dice from 1 to `y`. `Y` can be a letter 'F' if you want to roll fate dice instead of dnd.  | `.roll` or `.roll 7` or `.roll 3d5` or `.roll 5dF`
 `.rolluo` | Rolls `X` normal dice (up to 30) unordered. If you split 2 numbers with letter `d` (`xdy`) it will roll `X` dice from 1 to `y`.  | `.rolluo` or `.rolluo 7` or `.rolluo 3d5`
@@ -174,7 +172,7 @@ Command and aliases | Description | Usage
 `.shoprem` `.shoprm` | Removes an item from the shop by its ID. **Requires Administrator server permission.** | `.shoprm 1`
 `.slotstats` | Shows the total stats of the slot command for this bot's session. **Bot Owner Only** | `.slotstats`
 `.slottest` | Tests to see how much slots payout for X number of plays. **Bot Owner Only** | `.slottest 1000`
-`.slot` | Play Nadeko slots. Max bet is 9999. 1.5 second cooldown per user.  | `.slot 5`
+`.slot` | Play AntBot slots. Max bet is 9999. 1.5 second cooldown per user.  | `.slot 5`
 `.claimwaifu` `.claim` | Claim a waifu for yourself by spending currency.  You must spend at least 10% more than her current value unless she set `.affinity` towards you.  | `.claim 50 @Himesama`
 `.waifutransfer` | Transfer the ownership of one of your waifus to another user. You must pay 10% of your waifu's value.  | `.waifutransfer @ExWaifu @NewOwner`
 `.divorce` | Releases your claim on a specific waifu. You will get some of the money you've spent back unless that waifu has an affinity towards you. 6 hours cooldown.  | `.divorce @CheatingSloot`
@@ -191,7 +189,7 @@ Command and aliases | Description | Usage
 ----------------|--------------|-------
 `.choose` | Chooses a thing from a list of things  | `.choose Get up;Sleep;Sleep more`
 `.8ball` | Ask the 8ball a yes/no question.  | `.8ball Is b1nzy a nice guy?`
-`.rps` | Play a game of Rocket-Paperclip-Scissors with Nadeko.  | `.rps scissors`
+`.rps` | Play a game of Rocket-Paperclip-Scissors with AntBot.  | `.rps scissors`
 `.rategirl` | Use the universal hot-crazy wife zone matrix to determine the girl's worth. It is everything young men need to know about women. At any moment in time, any woman you have previously located on this chart can vanish from that location and appear anywhere else on the chart.  | `.rategirl @SomeGurl`
 `.linux` | Prints a customizable Linux interjection  | `.linux Spyware Windows`
 `.leet` | Converts a text to leetspeak with 6 (1-6) severity levels  | `.leet 3 Hello`
@@ -425,7 +423,7 @@ Command and aliases | Description | Usage
 `.roles` | List roles on this server or roles of a user if specified. Paginated, 20 roles per page.  | `.roles 2` or `.roles @Someone`
 `.channeltopic` `.ct` | Sends current channel's topic as a message.  | `.ct`
 `.createinvite` `.crinv` | Creates a new invite which has infinite max uses and never expires. **Requires CreateInstantInvite channel permission.** | `.crinv`
-`.stats` | Shows some basic stats for Nadeko.  | `.stats`
+`.stats` | Shows some basic stats for AntBot.  | `.stats`
 `.showemojis` `.se` | Shows a name and a link to every SPECIAL emoji in the message.  | `.se A message full of SPECIAL emojis`
 `.listservers` | Lists servers the bot is on with some basic info. 15 per page. **Bot Owner Only** | `.listservers 3`
 `.savechat` | Saves a number of messages to a text file and sends it to you. **Bot Owner Only** | `.savechat 150`
@@ -433,7 +431,7 @@ Command and aliases | Description | Usage
 `.botconfigedit` `.bce` | Sets one of available bot config settings to a specified value. Use the command without any parameters to get a list of available settings. **Bot Owner Only** | `.bce CurrencyName b1nzy` or `.bce`
 `.calculate` `.calc` | Evaluate a mathematical expression.  | `.calc 1+1`
 `.calcops` | Shows all available operations in the `.calc` command  | `.calcops`
-`.alias` `.cmdmap` | Create a custom alias for a certain Nadeko command. Provide no alias to remove the existing one. **Requires Administrator server permission.** | `.alias allin $bf 100 h` or `.alias "linux thingy" >loonix Spyware Windows`
+`.alias` `.cmdmap` | Create a custom alias for a certain AntBot command. Provide no alias to remove the existing one. **Requires Administrator server permission.** | `.alias allin $bf 100 h` or `.alias "linux thingy" >loonix Spyware Windows`
 `.aliaslist` `.cmdmaplist` `.aliases` | Shows the list of currently set aliases. Paginated.  | `.aliaslist` or `.aliaslist 3`
 `.serverinfo` `.sinfo` | Shows info about the server the bot is on. If no server is supplied, it defaults to current one.  | `.sinfo Some Server`
 `.channelinfo` `.cinfo` | Shows info about the channel. If no channel is supplied, it defaults to current one.  | `.cinfo #some-channel`
