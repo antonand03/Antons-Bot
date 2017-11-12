@@ -221,7 +221,6 @@ Command and aliases | Description | Usage
 ### Help  
 Command and aliases | Description | Usage
 ----------------|--------------|-------
-`.modules` `.mdls` | Lists all bot modules.  | `.modules`
 `.help` `.h` | Either shows a help for a single command, or DMs you help link if no arguments are specified.  | `.h .cmds` or `.h`
 
 ###### [Back to ToC](#table-of-contents)
