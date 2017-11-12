@@ -222,11 +222,7 @@ Command and aliases | Description | Usage
 Command and aliases | Description | Usage
 ----------------|--------------|-------
 `.modules` `.mdls` | Lists all bot modules.  | `.modules`
-`.commands` `.cmds` | List all of the bot's commands from a certain module. You can either specify the full name or only the first few letters of the module name.  | `.commands Administration` or `.cmds Admin`
 `.help` `.h` | Either shows a help for a single command, or DMs you help link if no arguments are specified.  | `.h .cmds` or `.h`
-`.hgit` | Generates the commandlist.md file. **Bot Owner Only** | `.hgit`
-`.readme` `.guide` | Sends a readme and a guide links to the channel.  | `.readme` or `.guide`
-`.donate` | Instructions for helping the project financially.  | `.donate`
 
 ###### [Back to ToC](#table-of-contents)
 
